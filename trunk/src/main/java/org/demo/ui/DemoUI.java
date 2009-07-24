@@ -18,7 +18,6 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -45,24 +44,19 @@ public class DemoUI extends JFrame {
     JPanel tablePanel = new JPanel();
     Log LOG = LogFactory.getLog(DemoUI.class);
     public DemoUI() {
-        setTitle("Demo - Hibernate Search");
-        JTabbedPane tabbedPane = new JTabbedPane();
+        setTitle("Demo - Hibernate Search");        
         initPanels();
-        tabbedPane.addTab("Start", startPanel);
-        tabbedPane.addTab("Query", queryPanel);
-        tabbedPane.addTab("Table Data", tablePanel);
+        JTabbedPane tabbedPane = initTabbedPane();
         getContentPane().add(tabbedPane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 400);
     }
 
     private void initPanels() {
-
         JTable dataTable = new JTable();
         initStartPanel(dataTable);
         initQueryPanel();
-        tablePanel.setLayout(new BorderLayout());
-        tablePanel.add(new JScrollPane(dataTable), BorderLayout.CENTER);
+        initTablePanel(dataTable);
     }
 
     private void initQueryPanel() {
@@ -118,6 +112,19 @@ public class DemoUI extends JFrame {
 
     }
 
+    private JTabbedPane initTabbedPane() {
+        JTabbedPane tabbedPane = new JTabbedPane();
+        tabbedPane.addTab("Start", startPanel);
+        tabbedPane.addTab("Query", queryPanel);
+        tabbedPane.addTab("Table Data", tablePanel);
+        return tabbedPane;
+    }
+
+    private void initTablePanel(JTable dataTable) {
+        tablePanel.setLayout(new BorderLayout());
+        tablePanel.add(new JScrollPane(dataTable), BorderLayout.CENTER);
+    }
+
     class SongTableModel extends AbstractTableModel {
 
         List<Song> songs;
@@ -164,7 +171,9 @@ public class DemoUI extends JFrame {
             this.songs = songs;
         }
     }
-
+    
+    //button click handler for populate. Observes DemoHelper to get
+    //status of load %
     class PopulateAction implements ActionListener, Observer {
 
         JTable tableToRefresh;
@@ -195,6 +204,7 @@ public class DemoUI extends JFrame {
         }
     }
     
+    
     class QueryTypeChangeListener implements ItemListener{
         JLabel infoLabel;
         JComboBox fieldCombo;
@@ -210,6 +220,7 @@ public class DemoUI extends JFrame {
         
     }
     
+    //Action responsible for running query.Delegates to DemoHelper
     class RunActionListener implements ActionListener{
         JComboBox queryTypeComboBox;
         JTextField criteriaTextField;
