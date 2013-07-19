@@ -6,7 +6,7 @@
     Author     : RanjiRam
 -->
 <persistence  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:jpa="http://java.sun.com/xml/ns/persistence"
+   xmlns="http://java.sun.com/xml/ns/persistence"
    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
     <persistence-unit name="music-db">
         <properties>
@@ -16,7 +16,7 @@
             <!-- property name="hibernate.connection.password" value="hibernate"/ -->
             <property name="hibernate.connection.url" value="jdbc:derby:hibernate;create=true"/>
             <!-- Hibernate search working dir -->
-            <property name="hibernate.search.default.indexBase" value="/temp"/>
+            <property name="hibernate.search.default.indexBase" value="${java.io.tmpdir}"/>
             <property name="hibernate.cache.use_second_level_cache" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>

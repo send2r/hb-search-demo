@@ -1,13 +1,18 @@
-Ticket to ride,The Beatles,Help!,Released in 60s
-Riders On the Storm,The Doors,LA woman,song about riders by Jim Morrison
-Oh My God,The Tester,Swan,Some random stuff
-When Pigs fly,Toasters,Swine,random for testing
-Ringing bell,Jim F,Builder,random for testing
-Raging Bull,Jr Frank,Boulder,random for testing
-Rock,Jr Frank,Busy Bee,strandom for testing-will not appear in prefix query
-Yesterday,The Beatles,Help!,Released in 60s
-Testing Song,Testing Artist,Testing Album,Notes notes notes notes
-Jump Up,Testing Artist,Testing Album,Notes notes notes notes
-Hop Hop,Testing Artist,Testing Album,Notes notes notes notes
-Run Run,Testing Artist,Testing Album,Notes notes
-Ran Ran away,Blueberry Muffins,Donuts,Test test test test test test test
+Is This Love,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),3:52
+No Woman No Cry (live),Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),7:09
+Could You Be Loved,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),3:58
+Three Little Birds,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),3:02
+Buffalo Soldier(Legendary),Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),4:19
+Get Up Stand Up,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),3:20
+Stir It Up,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),5:35
+The Legend,Bob Marley & The Wailers,Legend (disc 1: Legend Remastered),5:35
+04 Shishe Ka Ho,Mohd Rafi,Baat Ek Raat Ki (1962),6:20
+07 Aaj Ka Din,Mohd Rafi,Baat Ek Raat Ki (1962),3:53
+05 Saathi Na Koi Manzil,Mohd Rafi the legend,Bombai Ka Babu (1960),4:54
+Main Gaoon(slow),Mohd Rafi,Brahmachari,3:16
+02 Main Gaoon Tum So Jao (Happy),Mohd Rafi,Brahmachari,4:50
+03 Dil Ke Jharokhe Mein,Mohd Rafi,Brahmachari,6:38
+Until It Sleeps,Metallica,Load,4:29
+Hero Of The Day,Metallica,Load,4:22
+The Unforgiven,Metallica,Metallica,6:27
+Fade To Black,Metallica,Ride the Lightning,6:55
