@@ -236,12 +236,15 @@ public class DemoUI extends JFrame {
 
         public void actionPerformed(ActionEvent e) {
             try{
+                if(null == criteriaTextField.getText() || criteriaTextField.getText().trim().equals("")){
+                  return;
+                }
                 LOG.info("Run clicked, calling executeQuery with :");
                 LOG.info("Search field " + criteriaTextField.getText());
                 LOG.info("Field field " + fieldComboBox.getSelectedItem());
                 LOG.info("Query type index " + queryTypeComboBox.getSelectedIndex());
                 
-                List<Song> songs = DemoHelper.getDemoHelper().executeQuery(criteriaTextField.getText(), (String)fieldComboBox.getSelectedItem(), queryTypeComboBox.getSelectedIndex());
+                List<Song> songs = DemoHelper.getDemoHelper().executeQuery(criteriaTextField.getText().toLowerCase(), (String)fieldComboBox.getSelectedItem(), queryTypeComboBox.getSelectedIndex());
                 SongTableModel model = new SongTableModel(songs);
                 table.setModel(model);
                 ((SongTableModel) table.getModel()).fireTableDataChanged();                

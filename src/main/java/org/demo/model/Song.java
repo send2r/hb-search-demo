@@ -30,8 +30,8 @@ public class Song implements Serializable{
     private String album;
     private String notes;
     
-    @Column(name="ALBUM", length=25)
-    @Field(index=Index.TOKENIZED)
+    @Column(name="ALBUM", length=256)
+    @Field(index=Index.YES)
     public String getAlbum() {
         return album;
     }
@@ -40,8 +40,8 @@ public class Song implements Serializable{
         this.album = album;
     }
     
-    @Column(name="ARTIST", length=25)
-    @Field(index=Index.TOKENIZED)
+    @Column(name="ARTIST", length=256)
+    @Field(index=Index.YES)
     public String getArtist() {
         return artist;
     }
@@ -61,7 +61,7 @@ public class Song implements Serializable{
     }
     
     @Column(name="NOTES", length=256)
-    @Field(index=Index.TOKENIZED)
+    @Field(index=Index.YES)
     public String getNotes() {
         return notes;
     }
@@ -70,8 +70,8 @@ public class Song implements Serializable{
         this.notes = notes;
     }
     
-    @Column(name="TITLE", length=25)
-    @Field(index=Index.TOKENIZED)
+    @Column(name="TITLE", length=255)
+    @Field(index=Index.YES)
     public String getTitle() {
         return title;
     }
