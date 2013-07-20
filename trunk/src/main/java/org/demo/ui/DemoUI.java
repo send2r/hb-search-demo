@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.demo.ui;
 
 import java.awt.BorderLayout;
@@ -33,10 +29,7 @@ import org.apache.commons.logging.LogFactory;
 import org.demo.model.Song;
 import org.demo.util.DemoHelper;
 
-/**
- *
- * @author RanjiRam
- */
+@SuppressWarnings("serial")
 public class DemoUI extends JFrame {
 
     JPanel startPanel = new JPanel();
