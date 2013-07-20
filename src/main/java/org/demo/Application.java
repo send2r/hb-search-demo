@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.demo;
 
 import javax.swing.SwingUtilities;
@@ -11,10 +7,6 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.lucene.queryParser.ParseException;
 import org.demo.ui.DemoUI;
 
-/**
- *
- * @author RanjiRam
- */
 public class Application {
 
     private static final Log LOG = LogFactory.getLog(Application.class);

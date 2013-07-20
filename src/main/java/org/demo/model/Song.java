@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package org.demo.model;
 
 import java.io.Serializable;
@@ -16,10 +11,8 @@ import org.hibernate.search.annotations.Indexed;
 import org.hibernate.search.annotations.DocumentId;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Index;
-/**
- *
- * @author RanjiRam
- */
+
+@SuppressWarnings("serial")
 @Entity
 @Table(name="SONGS")
 @Indexed

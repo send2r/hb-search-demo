@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.demo.util;
 
 import java.io.BufferedReader;
@@ -34,10 +30,7 @@ import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
 import org.hibernate.search.jpa.FullTextEntityManager;
 
-/**
- *
- * @author RanjiRam
- */
+
 public class DemoHelper extends Observable {
 
     private static EntityManagerFactory entityManagerFactory;
@@ -66,9 +59,6 @@ public class DemoHelper extends Observable {
         LOG.info("Returning all records using Match all query");
         EntityManager em = entityManagerFactory.createEntityManager();
         List<Song> list = em.createQuery("select s from Song s").getResultList();
-
-        //FullTextEntityManager ftEm = org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
-        //List<Song> list =  ftEm.createFullTextQuery(luceneQuery, Song.class).getResultList();
         return list;
     }
 
